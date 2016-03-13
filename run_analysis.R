@@ -158,7 +158,7 @@ names(tidy)
 
 # k. save the tidy dataset in data
 tidyPath <- paste(dataDir, "tidy.txt", sep="/")
-write.table(tidy, tidyPath, sep="\t", col.names=T, row.names = T, quote=T)
+write.table(tidy, tidyPath, sep="\t", col.names=T, row.names = FALSE, quote=T)
 # verify data
 v <- read.table(tidyPath, sep="\t")
 dim(v)
